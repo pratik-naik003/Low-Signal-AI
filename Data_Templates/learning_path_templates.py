@@ -11,7 +11,7 @@ class LearningPathInput(BaseModel):
     subject:str=Field(description="Subject for which the learning path is to be created")
     year_old:int=Field(gt=0,le=100,description="Age of the learner in years")
     preferred_language:Literal["en","hi","mr"]=Field(description="Preferred language for learning materials")
-    focus_areas:Optional[List[str]]=Field(default=None,description="Specific areas to focus on within the subject")
+    focus_areas: List[str] = []
 
 class Topic(BaseModel):
     topic_name:str=Field(description="Name of the topic")
