@@ -5,3 +5,10 @@ langchain-google-genai
 python-dotenv
 langchain-core
 langchain-cerebras
+fastapi
+python-jose
+passlib[bcrypt]
+authlib
+python-multipart
+itsdangerous
+youtube_transcript_api
